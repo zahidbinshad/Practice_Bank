@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Page</title>
+    <!------------------------- tailwind Css ----------------------------------------->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-12 ">Let's get some <span
+                class="font-semibold text-purple-600 ">Mooooney</span>!!</h1>
+    </header>
+    <main class=" w-3/4 mx-auto">
+        <!------------------------------------------------------- BALANCE AND TRANSECTION SECTION STARTS ------------------------------------------------------------->
+        <section class="money-box mt-8">
+            <div class="grid grid-cols-3 gap-4 text-white">
+                <div class="bg-blue-400 p-8 rounded">
+                    <h3 class="text-3xl">Deposite</h3>
+                    <h4 class="text-2xl">$0000</h4>
+                </div>
+                <div class="bg-red-400 p-8 rounded">
+                    <h3 class="text-3xl">Withdraw</h3>
+                    <h4 class="text-2xl">$0000</h4>
+                </div>
+                <div class="bg-green-400 p-8 rounded">
+                    <h3 class="text-3xl">Balance</h3>
+                    <h4 class="text-2xl">$0000</h4>
+                </div>
+
+            </div>
+        </section>
+        <!------------------------------------------------------- BALANCE AND TRANSECTION SECTION ENDS --------------------------------------------------------------->
+        <!------------------------------------------------------- DEPOSITE AND WITHDRAW INPUT SECTION STARTS --------------------------------------------------------->
+        <section class="withdra-deposite mt-8">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="deposite-input bg-red-100 p-8 rounded">
+                    <h4>Enter your diposite amount in $USD</h4>
+                    <div>
+                        <input id="diposite-amount" class="border-2 border-grey-400 rounded block w-3/4 mb-4 p-1.5"
+                            type="text" placeholder="Enter your diposite amount in $USD">
+                        <button id="btn-deposite"
+                            class="bg-yellow-600 py-3 px-7 rounded text-white font-semibold">Diposite</button>
+                    </div>
+                </div>
+                <div class="deposite-input bg-green-100 p-8 rounded">
+                    <h4>Enter your withdraw amount in $USD</h4>
+                    <div>
+                        <input id="withdraw-amount" class="border-2 border-grey-400 rounded block w-3/4 mb-4 p-1.5"
+                            type="text" placeholder="Enter your withdraw amount in $USD">
+                        <button id="btn-withdraw"
+                            class="bg-yellow-600 py-3 px-7 rounded text-white font-semibold">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------------------------------------------- DEPOSITE AND WITHDRAW INPUT SECTION ENDS ----------------------------------------------------------->
+    </main>
+</body>
+
+</html>
