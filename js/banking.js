@@ -29,3 +29,41 @@ document.getElementById('btn-deposite').addEventListener('click', function () {
 
 
 })
+// working with Withdraw section 
+
+document.getElementById('btn-withdraw').addEventListener('click', function(){
+    const withdrawInput = document.getElementById('withdraw-input');
+    const withdrawAmount = withdrawInput.value;
+    const withdrawAmountNumber = parseFloat(withdrawAmount);
+
+
+    // setwithdrawtotal 
+
+    const withdrawTotal = document.getElementById('withdraw-total');
+    const oldWithdrawTotal =parseFloat(withdrawTotal.innerText);
+
+    const totalWithdrawAmount = withdrawAmountNumber + oldWithdrawTotal;
+
+    withdrawTotal.innerText = totalWithdrawAmount;
+    
+
+    //Balance Update after withdraw
+
+    const balanceUpdate = document.getElementById('balance-total');
+    const latestBalance = parseFloat(balanceUpdate.innerText);
+
+    const updatedBalanceAfterWithdraw = latestBalance - withdrawAmountNumber ;
+
+    balanceUpdate.innerText = updatedBalanceAfterWithdraw;
+
+
+
+    //clearInout 
+    withdrawInput.value = '';
+
+    
+})
+
+
+
+
